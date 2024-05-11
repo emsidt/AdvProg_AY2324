@@ -35,7 +35,6 @@ vector<string> filterWordsByLen(int wordLen, const vector<string>& vocabulary)
     return answer;
 }
 
-
 /***
     Args:
         selectedChars (set<char>): The predicted characters
@@ -51,7 +50,6 @@ if (selectedChars.empty()) {
         return *selectedChars.rbegin();
     }
 }
-
 
 /***
     Args:
@@ -70,7 +68,6 @@ map<char, int> countOccurrences(const vector<string>& candidateWords)
     }
     return mp;
 }
-
 
 /***
     Args:
@@ -91,7 +88,6 @@ char findMostFrequentChar(const map<char, int>& occurrences, const set<char>& se
     }
     return mostFrequent;
 }
-
 
 /***
     Args:
@@ -114,7 +110,6 @@ char findBestChar(const vector<string>& candidateWords, const set<char>& selecte
     }
     return bestChar;
 }
-
 
 string getWordMask(char nextChar)
 {
@@ -147,13 +142,6 @@ bool isCorrectChar(char ch, const string& mask)
 	}
     return answer;
 }
-
-
-
-
-
-
-
 
 /***
     Args:
